@@ -10,7 +10,7 @@ import SwiftUI
 struct LandmarkList: View {
     
     //  EnvironmentObject-Prop (-> Subscriber = 구독자)
-    //  (-> ???: "EnvironmentObject는 너무 많은 View에서 해당 Data를 함께 쓰고 읽고, 영향을 받을거라, 매번 넘기기 귀찮으니 가장 먼저 띄울 View에 적용해서, 이후에 꼬리를 물고 나타날 View들이 바로 가져다 쓸 수 있게 해주는 것")
+    //  (-> Ned: "EnvironmentObject는 너무 많은 View에서 해당 Data를 함께 쓰고 읽고, 영향을 받을거라, 매번 넘기기 귀찮으니 가장 먼저 띄울 View에 적용해서, 이후에 꼬리를 물고 나타날 View들이 바로 가져다 쓸 수 있게 해주는 것")
     @EnvironmentObject var modelData: ModelData
     
     //  State-Prop

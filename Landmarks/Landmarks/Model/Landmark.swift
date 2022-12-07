@@ -18,8 +18,7 @@ struct Landmark: Hashable, Codable, Identifiable {    //  Hashable, Codable, Ide
                                         //  Codable: Decodable + Encodable Protocol
                                         //              -> Structure와 Data File 간의 Data를 이동을 더 쉽게 해줌
                                         //  Identifiable: A class of types whose instances hold the value of an entity with stable identity.
-                                        //              -> Hashable Protocol을 채택받은 id Property 하나만을 가지고 있고,
-                                        //                  id Prop으로 고유 개채를 구분할 수 있음
+                                        //              -> Hashable Protocol을 채택받은 id Property 하나만을 가지고 있고, id Property로 고유 개체를 구분할 수 있음
     
     //  Stored-Props
     var name: String
