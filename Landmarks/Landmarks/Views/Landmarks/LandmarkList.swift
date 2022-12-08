@@ -25,7 +25,7 @@ struct LandmarkList: View {
     }   //  Compute a filtered version of the landmarks list by checking the showFavoritesOnly property and each landmark.isFavorite value.
      */
     
-    //  eq. Line 17
+    //  eq. Line 21
     var filteredLandmarks: [Landmark] {
         
         get {
