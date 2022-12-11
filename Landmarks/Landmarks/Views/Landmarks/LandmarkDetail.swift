@@ -14,6 +14,8 @@ struct LandmarkDetail: View {
     
     //  Stored-Prop
     var landmark: Landmark
+    
+    //  Computed-Prop
     var landmarkIndex: Int {
         
         get {
@@ -65,7 +67,6 @@ struct LandmarkDetail_Previews: PreviewProvider {
     static let modelData: ModelData = ModelData()
     
     static var previews: some View {
-        LandmarkDetail(landmark: modelData.landmarks[0])
-            .environmentObject(modelData)
+        LandmarkDetail(landmark: ModelData().landmarks[0])  //  Update the LandmarkDetail view to work with the ModelData object in the environment.
     }
 }
