@@ -67,6 +67,7 @@ struct LandmarkDetail_Previews: PreviewProvider {
     static let modelData: ModelData = ModelData()
     
     static var previews: some View {
-        LandmarkDetail(landmark: ModelData().landmarks[0])  //  Update the LandmarkDetail view to work with the ModelData object in the environment.
+        LandmarkDetail(landmark: modelData.landmarks[0])
+            .environmentObject(modelData)   //  To support this, you also need access to the environment’s model data.
     }
 }
